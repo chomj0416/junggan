@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub 포트폴리오</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .content {
+        text-align: center;
+        color: white;
+        padding: 40px 20px;
+      }
+
+      .content h2 {
+        color: #ff00c8;
+        font-size: 2em;
+      }
+
+      .content a.github-link {
+        color: #ff00c8;
+        font-size: 1.5em;
+        font-weight: bold;
+        display: inline-block;
+        margin: 10px 0 40px;
+      }
+
+      .projects {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+
+      .project {
+        max-width: 350px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .project img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .project a {
+        display: block;
+        margin-top: 10px;
+        color: #ff00c8;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-decoration: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ASSIGNMENT</h1>
+    </header>
+
+    <main class="content">
+      <h2>GITHUB 주소</h2>
+      <a
+        class="github-link"
+        href="https://github.com/chomj0416?tab=repositories"
+        target="_blank"
+      >
+        https://github.com/chomj0416?tab=repositories
+      </a>
+
+      <div class="projects">
+        <div class="project">
+          <img src="hw1.PNG" alt="웹 데모 프로젝트" />
+          <a href="https://hgddemo.vercel.app/" target="_blank">첫번째 과제</a>
+        </div>
+        <div class="project">
+          <img src="hw2.PNG" alt="HTML 테스트 프로젝트" />
+          <a href="https://htmltest-teal.vercel.app/" target="_blank"
+            >두번째 과제</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
