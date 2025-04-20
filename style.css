@@ -10,14 +10,39 @@ body {
 header {
   background-color: #5cff33; /* 연두색 */
   padding: 30px 0;
-  text-align: center;
+  display: flex; /* flex 유지 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  width: 100%; /* 헤더가 전체 너비를 차지하도록 */
+  box-sizing: border-box; /* 패딩이 너비에 영향을 주지 않도록 */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 내부 요소도 중앙 정렬 */
+  gap: 15px; /* 별과 HOME 텍스트 사이 간격 */
+  width: fit-content; /* 내용 크기에 맞게 조정 */
+  margin: 0 auto; /* 좌우 마진으로 중앙 정렬 보장 */
 }
 
 header h1 {
   margin: 0;
-  font-size: 4em;
+  font-size: 70px;
   font-weight: bold;
   color: black;
+}
+header h1 a {
+  margin: 0;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.star-icon {
+  width: 50px; /* 별 이미지 크기 */
+  height: 50px; /* 별 이미지 크기 */
 }
 
 /* 중앙 메뉴 */
